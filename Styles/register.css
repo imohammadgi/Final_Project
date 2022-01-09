@@ -1,0 +1,194 @@
+/*region fonts*/
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir.woff") format("woff");
+    font-weight: normal;
+}
+/*endregion fonts*/
+
+/*region layout*/
+
+html{
+    height: 100%;
+    font-size: 1vw;
+    line-height: 0;
+}
+
+body{
+    height: 100%;
+    background-color:whitesmoke;
+    font-family: Vazir,sans-serif;
+}
+
+#wrapper{
+    direction: rtl;
+    text-align: right;
+    min-height: 100%;
+}
+
+/*endregion layout*/
+
+/*region helper*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr,p,br,h1,h2{
+    line-height: 2;
+}
+
+.wide-wrap{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::after{
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    content: '';
+}
+
+/*endregion helper*/
+
+/*region content*/
+
+#wrapper::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    top: 14vh;
+    left: 10%;
+    height: 80%;
+    background: #f2f2f2;
+    box-shadow: 1px 1px 40px gray , -1px -1px 40px gray;
+    z-index: -1;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+}
+
+.layout{
+    background-image: linear-gradient(to bottom, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, hue, normal;
+    width: 80%;
+    height: 600px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #1b1717;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+
+}
+
+.back-txt{
+    color: #1b1717;
+    margin: 2rem;
+    font-size: 1rem;
+}
+
+.back-txt:hover{
+    color: blue;
+    text-shadow: 1px 1px 0.5px #1b1717;
+    font-weight: bolder;
+}
+
+.chevron{
+    color: #1b1717;
+    vertical-align: middle;
+}
+
+.txt-login{
+    padding:2.5rem;
+    text-shadow: 2px 2px 2px #2e2e2e;
+}
+
+.left{
+    width: 50%;
+    height:100%;
+}
+
+.form-layout{
+    text-align: center;
+    width: 80%;
+    margin-top: 6rem;
+    background: rgb(4,30,223);
+    background: linear-gradient(360deg, rgba(4,30,223,1) 1%, rgba(1,7,70,1) 50%, rgba(4,30,223,1) 100%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 60px #2e2e2e;
+}
+
+.form-layout p {
+    color: #f2f2f2;
+}
+
+.login{
+    height: 25px;
+    width: 70%;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #f2f2f2;
+    border-bottom: 1px solid white;
+    opacity: 100%;
+    border-radius: 50px;
+    transition:  1s all;
+}
+
+.login:focus{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    color: #1b1717;
+}
+
+.account{
+    color: #f2f2f2;
+}
+
+.form-layout label{
+    color: #f2f2f2;
+}
+
+.login-btn{
+    height: 40px;
+    width: 50%;
+    background-color: transparent;
+    color: #f2f2f2;
+    font-weight: bold;
+    border: none;
+    transition: 1s all;
+}
+
+.login-btn:hover{
+    background-color: #f2f2f2;
+    color: #1b1717;
+}
+
+.forget{
+    color: #676767;
+}
+
+.forget:hover{
+    color: #f2f2f2;
+    text-shadow: 2px 2px 2px #2e2e2e;
+}
+
+/*endregion content*/
